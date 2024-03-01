@@ -13,7 +13,7 @@ public class Gate {
      * @return true, если направление установлено успешно, false в противном случае
      */
     public boolean setSwing(int direction) {
-        if (direction == IN | direction == OUT | direction == CLOSED) {
+        if (direction == IN || direction == OUT || direction == CLOSED) {
             mSwing = direction;
             return true;
         } else {
